@@ -6,16 +6,101 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eeefef;
+}
+.slide-container{
+    max-width: 1120px;
+    width: 100%;
+    background-color: gray;
+    padding: 40px;
+}
+.slide-content{
+    margin: 0 40px;
+}
+.card{
+    width: 320px;
+    border-radius: 25px;
+    background-color: white;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+.image-content{
+    row-gap: 6px;
+    position: relative;
+    padding: 25px 0;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #4070f4;
+    border-radius: 20px 20px 0 20px;
+}
+.overlay::after,
+.overlay::before{
+    content: '';
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    right: 0px;
+    bottom: -40px;
+    background-color: #4070f4;
+}
+.overlay::after{
+    border-radius: 0 20px 0px 0px;
+    background-color: white;
+}
 .card-image{
     position: relative;
     height: 150px;
     width: 150px;
+    border-radius: 50%;
+    background: white;
+    padding: 3px;
 }
 .card-image .card-img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid rgba(66, 66, 185, 0.781);
 }
 
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+}
+.description{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+.button{
+    border: none;
+    font-size: 16px;
+    color: white;
+    padding: 8px 16px;
+    background-color: rgba(50, 50, 211, 0.87);
+    border-radius: 6px;
+    margin: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button:hover{
+    background: rgb(50, 50, 211);
+}
 
-
+/* continue from 11 min... Time to do Backend studies */
