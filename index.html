@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/swiper-bundle-min.css">
     <link rel="stylesheet" href="CSS/style.css">
     <title>CardSlider</title>
 </head>
 <body>
     <!-- Following a tutorial after a while to get better understanding -->
 
-    <div class="slide-container">
-        <div class="slide-content">
-            <div class="card-wrapper">
-                <div class="card">
+    <div class="slide-container swiper">
+        <div class="slide-content ">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
                     <div class="image-content">
                         <span class="overlay"></span>
                         <div class="card-image">
@@ -30,8 +31,53 @@
                 </div>
             </div>
         </div>
+        <div class="slide-content ">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="Images/Kem (1).jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Akia Kemuel</h2>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Aspernatur veritatis beatae illo reprehenderit non corporis?
+                        </p>
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-content ">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img src="Images/Kem (1).jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Akia Kemuel</h2>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Aspernatur veritatis beatae illo reprehenderit non corporis?
+                        </p>
+                        <button class="button">View More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
     </div>
 
 
 </body>
+<script src="JavaScript/swiper-bundle.min.js"></script>
+<script src="JavaScript/main.js"></script>
 </html>
